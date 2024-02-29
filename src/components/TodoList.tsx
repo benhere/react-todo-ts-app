@@ -6,13 +6,11 @@ interface TodoListProps {
 
 const TodoList: React.FC<TodoListProps> = (props) => {
   return (
-    <div>
-      <ul>
-        {props.items.map((todo) => (
-          <li key={todo.id}>{todo.text}</li>
-        ))}
-      </ul>
-    </div>
+    <ul>
+      {props.items.map((todo) => (
+        <li key={todo.id}>{todo.text}</li>
+      ))}
+    </ul>
   );
 }
 
